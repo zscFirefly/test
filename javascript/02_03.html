@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- 以下是匿名函数的使用 -->
+	<script> 
+		window.onload=function()
+		{	
+			var oBtn=document.getElementById('btn1')
+		
+			oBtn.onclick=function()
+			{
+				alert ('a')
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" id="btn1" value="按钮" name="">
+
+<!-- 行间事件提取 示例1 
+<script>
+	var oBtn=document.getElementById('btn1')
+
+	function abc()
+	{
+		alert ('a')
+	}
+	oBtn.onclick=abc
+</script>
+--> 
+
+</body>
+</html>

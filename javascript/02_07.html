@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#div1 {width: 200px;height: 150px;border: 2px solid black;}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oTxt=document.getElementById('txt1');
+			var oBtn=document.getElementById('btn1');
+			var oBtn2=document.getElementById('btn2');
+			var oDiv=document.getElementById('div1');
+
+			oBtn.onclick=function()
+			{
+				oDiv.innerHTML=oTxt.value;
+				oTxt.value='请输入文字'
+			}
+
+			oTxt.onclick=function()
+			{
+				oTxt.value=''
+			}
+
+			oBtn2.onclick=function()
+			{
+				oDiv.innerHTML='';
+				// alert(oDiv.innerHTML)
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="txt1" type="text" >
+	<input id="btn1" type="button" value="设置文字">
+	<input id="btn2" type="button" value="清空">
+	<div id="div1">
+		<!-- dsdfa -->
+	</div>
+
+</body>
+</html>

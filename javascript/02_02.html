@@ -13,6 +13,13 @@
 
 			oDiv.style[name]=value
 		}
+
+		function setReturn()
+		{
+			var oDiv=document.getElementById('div1')
+
+			oDiv.style.width.clear()
+		}
 		/*function toWidth()
 		{
 			var oDiv=document.getElementById('div1')
@@ -31,6 +38,10 @@
 
 			oDiv.style.background='green'
 		}
+
+	<input type="button" value="还原" onclick="setStyle('background','red');setStyle('width','200px');setStyle('height','200px');">
+
+
 		*/
 	</script>
 </head>
@@ -38,6 +49,7 @@
 	<input type="button" value="变宽" onclick="setStyle('width','400px')">
 	<input type="button" value="变高" onclick="setStyle('height','400px')">
 	<input type="button" value="变绿" onclick="setStyle('background','green')">
+	<input type="button" value="还原" onclick="setReturn()">
 	<div id='div1'></div>
 
 </body>
